@@ -5,6 +5,7 @@ import { isPlayerInGame } from './state.js';
 export const Plan = (props) => {
   return (
     <svg
+      className="plan"
       xmlns="http://www.w3.org/2000/svg"
       width="210mm"
       height="297mm"

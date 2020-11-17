@@ -1,0 +1,10 @@
+.plan {
+  background-image: url(./img/background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+.button {
+  margin: 1em;
+}
