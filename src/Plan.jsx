@@ -3,6 +3,7 @@ import { Figure } from './Figure.jsx';
 import { isPlayerInGame } from './state.js';
 
 export const Plan = (props) => {
+  const fields = props.state.fields;
   return (
     <svg
       className="plan"
@@ -870,33 +871,18 @@ export const Plan = (props) => {
           ></feGaussianBlur>
         </filter>
       </defs>
-      <Figure
-        player={props.fields[0]}
-        position=".3367 0 0 .3341 41.892 14.393"
-      />
-      <Figure
-        player={props.fields[1]}
-        position=".35347 0 0 .33164 66.701 11.122"
-      />
-      <Figure
-        player={props.fields[2]}
-        position=".3367 0 0 .3341 95.257 10.797"
-      />
-      <Figure
-        player={props.fields[3]}
-        position=".3367 0 0 .3341 120.19 9.237"
-      />
-      <Figure
-        player={props.fields[4]}
-        position=".3367 0 0 .3341 151.17 11.473"
-      />
+      <Figure player={fields[0]} position=".3367 0 0 .3341 41.892 14.393" />
+      <Figure player={fields[1]} position=".35347 0 0 .33164 66.701 11.122" />
+      <Figure player={fields[2]} position=".3367 0 0 .3341 95.257 10.797" />
+      <Figure player={fields[3]} position=".3367 0 0 .3341 120.19 9.237" />
+      <Figure player={fields[4]} position=".3367 0 0 .3341 151.17 11.473" />
       {/*domeček*/}
       <Figure
-        player={isPlayerInGame(props.fields, 1) ? 0 : 1}
+        player={isPlayerInGame(props.state, 1) ? 0 : 1}
         position=".3367 0 0 .3341 4.582 -11.145"
       />
       <Figure
-        player={isPlayerInGame(props.fields, 2) ? 0 : 2}
+        player={isPlayerInGame(props.state, 2) ? 0 : 2}
         position=".33695 0 0 .32276 3.75 34.285"
       />
     </svg>

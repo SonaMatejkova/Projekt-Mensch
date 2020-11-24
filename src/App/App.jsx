@@ -8,9 +8,15 @@ export const App = () => {
   return (
     <div className="App">
       <h1>Mensch, nezlob se!</h1>
-      <p>Na tahu je hráč: {state.onTurn}</p>
-      <button onClick={() => setState(doTurn(state, 1, 1))}>Tah</button>
-      <Plan fields={state.fields} />
+      <p>
+        Na tahu je hráč:{' '}
+        <span className={`player-${state.player}`}>{state.player}</span>
+        {state.dice ? ` Kostka ukazuje ${state.dice}` : ''}
+      </p>
+      <button onClick={() => setState(doTurn(state, 1, 1))}>
+        {state.dice ? 'Táhni' : 'Házej'}
+      </button>
+      <Plan state={state} />
     </div>
   );
 };

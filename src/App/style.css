@@ -8,3 +8,11 @@
 .button {
   margin: 1em;
 }
+
+.player-1 {
+  color: red;
+}
+
+.player-2 {
+  color: green;
+}
