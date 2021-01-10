@@ -1,0 +1,241 @@
+.new-game {
+  background-color: #a32300;
+  padding: 15px;
+  font-family: 'Jura', sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 1px solid darkgrey;
+  border-radius: 20px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.new-game:hover {
+  color: grey;
+}
+
+.container-homes {
+  transform: translate(0, -40px);
+}
+.homes {
+  display: flex;
+  justify-content: center;
+}
+
+.snowflake {
+  width: 70px;
+  margin: 0 35px;
+}
+
+.home-lyzari {
+  display: flex;
+  justify-content: center;
+  transform: translate(0, 40px);
+}
+
+.home-placeholder,
+.lyzar {
+  width: 70px;
+  height: 90px;
+  margin: 0 35px;
+}
+
+.container-dice {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.infobublina {
+  width: 70%;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px 20px;
+}
+
+.player-1 {
+  background-color: #a32300;
+}
+
+.player-2 {
+  background-color: #16502d;
+}
+
+.dice {
+  width: 5.5pc;
+  height: 5.5pc;
+}
+
+.div-dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px 20px 10px 0;
+}
+
+.div-ski {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .new-game {
+    font-size: 24px;
+    top: 80px;
+    right: 20px;
+  }
+
+  .homes {
+    margin: 0 5px 10px 5px;
+  }
+
+  .snowflake {
+    width: 90px;
+    margin: 0 10px;
+  }
+
+  .home-lyzari {
+    transform: translate(0, 50px);
+  }
+
+  .home-placeholder,
+  .lyzar {
+    width: 90px;
+    height: 120px;
+    margin: 0 10px;
+  }
+
+  .infobublina {
+    width: 60%;
+    line-height: 1.3;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin: 0 15px;
+    font-size: 14px;
+  }
+
+  .container-dice {
+    margin: -30px 10px 0 0;
+  }
+  .dice {
+    width: 5.5pc;
+    height: 5.5pc;
+  }
+
+  .div-dice {
+    border-radius: 20px;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .new-game {
+    padding: 20px;
+    top: 90px;
+    right: 40px;
+  }
+
+  .snowflake {
+    width: 110px;
+    margin: 0 20px;
+  }
+
+  .home-placeholder,
+  .lyzar {
+    width: 110px;
+    height: 180px;
+    margin: 0 20px;
+  }
+  .home-lyzari {
+    transform: translate(0, 70px);
+  }
+  .container-homes {
+    margin-bottom: 30px;
+  }
+  .infobublina {
+    width: 60%;
+    line-height: 1.5;
+    padding: 20px;
+    font-size: 18px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.5);
+    margin: 0 30px;
+  }
+
+  .container-dice {
+    margin: -30px 20px 0 0;
+  }
+
+  .dice {
+    width: 7pc;
+    height: 7pc;
+  }
+
+  .div-dice {
+    border-radius: 30px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .new-game {
+    top: 80px;
+  }
+  .container-homes {
+    transform: none;
+  }
+  .homes {
+    margin: 0 30px;
+  }
+  .snowflake {
+    width: 130px;
+  }
+  .home-lyzari {
+    transform: translate(0, 60px);
+  }
+  .home-placeholder,
+  .lyzar {
+    width: 130px;
+    height: 180px;
+  }
+  .container-dice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .infobublina {
+    width: 260px;
+    height: 120px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .dice {
+    width: 8pc;
+    height: 8pc;
+  }
+  .div-dice {
+    margin: 0;
+  }
+  .div-ski {
+    display: inline;
+    width: 150px;
+    margin: 20px 0 0 120px;
+  }
+}

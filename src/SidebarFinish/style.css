@@ -1,0 +1,255 @@
+.shade-finish {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.popup-finish {
+  position: fixed;
+  width: 300px;
+  background: white;
+  left: calc(50% - 150px);
+  top: calc(40% - 200px);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border-radius: 30px;
+  border: 6px solid #e6c300;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-animation: pop-up 0.65s linear;
+  animation: pop-up 0.65s linear;
+}
+
+@-webkit-keyframes pop-up {
+  0% {
+    -webkit-transform: scale(0.2) rotateZ(0);
+    transform: scale(0.2) rotateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes pop-up {
+  0% {
+    -webkit-transform: scale(0.2) rotateZ(0);
+    transform: scale(0.2) rotateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+.shimmer {
+  /* styling stuff */
+  font-weight: 300;
+  font-size: 34px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  text-shadow: 1px 1px;
+  color: rgba(255, 255, 255, 0.1);
+
+  /* the shimmer magic */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#e6c300),
+    to(#e6c300),
+    color-stop(0.5, #fff)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#e6c300),
+    to(#e6c300),
+    color-stop(0.5, #fff)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#e6c300),
+    to(#e6c300),
+    color-stop(0.5, #fff)
+  );
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  -webkit-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #e6c300;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@-ms-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+.center img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 10px 0 10px 0;
+}
+
+.center figure {
+  margin: 0 20px;
+}
+
+.center figcaption {
+  font-size: 8px;
+  text-align: center;
+  color: grey;
+  margin: 0px;
+  padding: 0px;
+}
+
+.gratulace {
+  font-size: 16px;
+  text-align: center;
+  color: #2c88a0;
+  margin-top: 20px;
+}
+
+.bublina-final {
+  position: relative;
+  padding: 15px;
+  text-align: center;
+  background-color: #a32300;
+  border: 2px solid darkgrey;
+  border-radius: 20px;
+  font-family: 'Jura', sans-serif;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.bublina-final:hover {
+  color: grey;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px;
+}
+
+@media screen and (min-width: 576px) {
+  .popup-finish {
+    width: 440px;
+    left: calc(50% - 220px);
+    top: calc(40% - 250px);
+    border-width: 8px;
+  }
+  .shimmer {
+    font-size: 38px;
+  }
+  .center img {
+    width: 300px;
+    height: 300px;
+  }
+  .center figcaption {
+    font-size: 10px;
+  }
+  .gratulace {
+    font-size: 20px;
+    margin: 30px;
+  }
+
+  .bublina-final {
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .popup-finish {
+    width: 500px;
+    left: calc(50% - 250px);
+    top: calc(40% - 200px);
+  }
+  .gratulace {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .popup-finish {
+    top: calc(40% - 240px);
+  }
+}

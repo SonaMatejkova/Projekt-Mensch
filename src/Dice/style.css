@@ -1,0 +1,7 @@
+.dice {
+  cursor: pointer;
+}
+
+.dice:hover text {
+  fill: rgb(116, 115, 115);
+}

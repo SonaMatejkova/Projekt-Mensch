@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&family=Roboto:wght@300;400;900&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
